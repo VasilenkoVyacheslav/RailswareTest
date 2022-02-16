@@ -3,7 +3,6 @@ import PageWrapper from "../components/PageWrapper";
 import SubmitButton from "../components/SubmitButton";
 import Modal from "../components/Modal";
 import Link from "next/link";
-import loginImage from "../images/login.svg";
 
 const Login = () => {
     const [openModal, setOpenModal] = useState(false);
@@ -23,7 +22,7 @@ const Login = () => {
             <div className="login">
                 <form className="form" onSubmit={submitForm}>
                     <div className="form__image">
-                        <img src={loginImage} alt="Login"/>
+                        <img src="/images/login.svg" alt="Login"/>
                     </div>
                     <h1>Welcome Back!</h1>
                     <div className="form__row">

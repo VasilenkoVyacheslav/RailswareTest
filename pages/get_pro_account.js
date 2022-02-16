@@ -1,5 +1,4 @@
 import PageWrapper from "../components/PageWrapper";
-import getProAccount from "../images/get_pro_account.svg";
 import SubmitButton from "../components/SubmitButton";
 import Modal from "../components/Modal";
 import React, {useState} from "react";
@@ -30,7 +29,7 @@ const GetProAccount = () => {
             <div className="getProAccount">
                 <form className="form" onSubmit={submitForm}>
                     <div className="form__image">
-                        <img src={getProAccount} alt="Get Pro Account"/>
+                        <img src="/images/get_pro_account.svg" alt="Get Pro Account"/>
                     </div>
                     <h1>Get Pro Account</h1>
                     <div className="form__row">
