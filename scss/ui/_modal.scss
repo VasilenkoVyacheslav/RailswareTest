@@ -1,0 +1,71 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    padding: 15px;
+    background-color: rgba(0,0,0,.45);
+    justify-content: center;
+    align-items: center;
+
+    &__window {
+        background-color: $white;
+        position: relative;
+        max-width: 480px;
+        width: 100%;
+        border-radius: 8px;
+        padding: 36px;
+        text-align: center;
+        box-shadow: 0 0 8px 1px rgba(0,0,0,.35);
+
+        h3 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            margin: 0 0 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: $gray;
+        }
+    }
+
+    &__close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: $black;
+            transition: .3s;
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}

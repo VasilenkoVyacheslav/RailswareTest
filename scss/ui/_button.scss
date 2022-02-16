@@ -1,0 +1,61 @@
+.button {
+    display: inline-block;
+    height: 50px;
+    padding: 17px 18px;
+    font-size: 16px;
+    line-height: 1;
+    font-family: $roboto_font;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 8px;
+    background: $blue;
+    transition: .3s;
+    text-align: center;
+    border: 1px solid $blue;
+    cursor: pointer;
+
+    &:hover {
+        background: none;
+        color: $blue;
+    }
+
+    &:active {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .3);
+    }
+
+    &--small {
+        @extend .button;
+        padding: 11px 47px 12px;
+        text-transform: none;
+        background-color: $blue_secondary;
+        border-color: $blue_secondary;
+        border-radius: 5px;
+        height: 40px;
+        color: $white;
+
+        &:hover {
+            color: $blue_secondary!important;
+            text-decoration: none;
+        }
+    }
+
+    &--small-red {
+        @extend .button--small;
+        background-color: $red;
+        border-color: $red;
+
+        &:hover {
+            color: $red!important;
+        }
+    }
+
+    &--red {
+        @extend .button;
+        background: $dark_red;
+        border-color: $dark_red;
+
+        &:hover {
+            color: $dark_red!important;
+        }
+    }
+}
