@@ -1,5 +1,4 @@
 import PageWrapper from "../components/PageWrapper";
-import forgotPasswordImage from "../images/forgot_password.svg";
 import Link from "next/link";
 import SubmitButton from "../components/SubmitButton";
 import Modal from "../components/Modal";
@@ -23,7 +22,7 @@ const ForgotPassword = () => {
             <div className="forgotPassword">
                 <form className="form" onSubmit={submitForm}>
                     <div className="form__image">
-                        <img src={forgotPasswordImage} alt="Forgot Password"/>
+                        <img src="/images/forgot_password.svg" alt="Forgot Password"/>
                     </div>
                     <h1>Forgot Password</h1>
                     <div className="form__row">
