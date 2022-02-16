@@ -64,6 +64,10 @@ const GetProAccount = () => {
                                 >
                                     {() => <input type="text" className="form__input" placeholder="CVV" name="cardCVV" required />}
                                 </InputMask>
+                                <div className="form__clue">
+                                    What's this?
+                                    <span className="form__clue-text">See 3 digits on the back of a bank card</span>
+                                </div>
                             </div>
                         </div>
                     </div>
