@@ -34,6 +34,26 @@
         padding: 16px 18px 18px;
         color: $blue;
 
+        &[type='email'] {
+            padding-left: 46px;
+            background: url("../../images/email_icon.svg") no-repeat 12px 50%;
+            background-size: 25px;
+
+            &:focus {
+                background-image: url("../../images/email_icon_active.svg");
+            }
+        }
+
+        &[type='password'] {
+            padding-left: 46px;
+            background: url("../../images/password_icon.svg") no-repeat 12px 50%;
+            background-size: 25px;
+
+            &:focus {
+                background-image: url("../../images/password_icon_active.svg");
+            }
+        }
+
         &:focus {
             border-color: $blue;
 

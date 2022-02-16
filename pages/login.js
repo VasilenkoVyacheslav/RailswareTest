@@ -30,7 +30,7 @@ const Login = () => {
                         <input type="email" className="form__input" placeholder="example@email.com" name="Email" required />
                     </div>
                     <div className="form__row">
-                        <input type="password" className="form__input" placeholder="password" name="password" required />
+                        <input type="password" minLength="4" className="form__input" placeholder="password" name="password" required />
                     </div>
                     <div className="text-right">
                         <Link href="/forgotPassword">
