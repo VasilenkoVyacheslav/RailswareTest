@@ -1,0 +1,26 @@
+.login {
+    padding: 30px 0 75px;
+
+    .button {
+        margin-top: 50px;
+        letter-spacing: -0.408px;
+
+        @include screen(380) {
+            margin-top: 36px;
+        }
+
+        &--small {
+            margin-top: 0;
+            letter-spacing: normal;
+            color: $white;
+        }
+    }
+
+    p {
+        margin: 50px 0 36px;
+
+        @include screen(380) {
+            margin: 36px 0 24px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.form {
+    max-width: 344px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__row {
+        padding-bottom: 10px;
+
+        & + .form__row {
+            padding-top: 26px;
+
+            @include screen(380) {
+                padding-top: 14px;
+            }
+        }
+    }
+
+    &__image {
+        margin: 0 0 32px;
+
+        img {
+            max-height: 212px;
+        }
+    }
+
+    &__input {
+        display: inline-block;
+        font-family: $roboto_font;
+        font-size: 16px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid $borders;
+        border-radius: 5px;
+        padding: 16px 18px 18px;
+        color: $blue;
+
+        &:focus {
+            border-color: $blue;
+
+            &::-webkit-input-placeholder {
+                color: $blue;
+            }
+            &::-moz-placeholder {
+                color: $blue;
+            }
+            &:-ms-input-placeholder {
+                color: $blue;
+            }
+            &:-moz-placeholder {
+                color: $blue;
+            }
+        }
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    p {
+        color: $light_gray;
+        line-height: 19px;
+    }
+}
