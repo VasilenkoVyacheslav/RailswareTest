@@ -29,9 +29,7 @@ const ForgotPassword = () => {
                     <div className="form__row">
                         <input type="email" className="form__input" placeholder="example@email.com" name="Email" required />
                     </div>
-                    <div className="form__row">
-                        <SubmitButton text="Reset" />
-                    </div>
+                    <SubmitButton text="Reset" />
                     <p>Already have an account?
                         <Link href="/login">
                             <a> Login here</a>

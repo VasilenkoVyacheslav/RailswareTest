@@ -33,7 +33,7 @@ const Login = () => {
                         <input type="password" minLength="4" className="form__input" placeholder="password" name="password" required />
                     </div>
                     <div className="text-right">
-                        <Link href="/forgotPassword">
+                        <Link href="/forgot_password">
                             <a>Forgot password?</a>
                         </Link>
                     </div>

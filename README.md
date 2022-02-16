@@ -12,3 +12,11 @@ To run the project:
     npm run start
    ```
 4. Open in browser http://localhost:3000/
+
+5.Pages:
+
+Login: ``/Login``;
+
+Forgot password: ``/forgot_password``;
+
+Get PRO account: ``/get_pro_account``;

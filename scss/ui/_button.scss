@@ -48,4 +48,14 @@
             color: $red!important;
         }
     }
+
+    &--red {
+        @extend .button;
+        background: $dark_red;
+        border-color: $dark_red;
+
+        &:hover {
+            color: $dark_red!important;
+        }
+    }
 }

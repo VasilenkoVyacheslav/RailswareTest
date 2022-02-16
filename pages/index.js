@@ -1,8 +1,8 @@
-import Login from "./login";
+import Navigation from "../components/Navigation";
 
 const Index = () => {
     return (
-        <Login />
+        <Navigation />
     )
 };
 
